@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA10CB882051C3180021888E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10CB872051C3180021888E /* AppDelegate.swift */; };
+		CA10CB8A2051C3180021888E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CA10CB892051C3180021888E /* GameScene.sks */; };
+		CA10CB8C2051C3180021888E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CA10CB8B2051C3180021888E /* Actions.sks */; };
+		CA10CB8E2051C3180021888E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10CB8D2051C3180021888E /* GameScene.swift */; };
+		CA10CB902051C3180021888E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10CB8F2051C3180021888E /* GameViewController.swift */; };
+		CA10CB932051C3180021888E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA10CB912051C3180021888E /* Main.storyboard */; };
+		CA10CB952051C3180021888E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA10CB942051C3180021888E /* Assets.xcassets */; };
+		CA10CB982051C3180021888E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA10CB962051C3180021888E /* LaunchScreen.storyboard */; };
+		CA10CBA32051C3190021888E /* LaserGuidedWarSharksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10CBA22051C3190021888E /* LaserGuidedWarSharksTests.swift */; };
+		CA10CBAE2051C3190021888E /* LaserGuidedWarSharksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10CBAD2051C3190021888E /* LaserGuidedWarSharksUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA10CB9F2051C3190021888E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA10CB7C2051C3180021888E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA10CB832051C3180021888E;
+			remoteInfo = LaserGuidedWarSharks;
+		};
+		CA10CBAA2051C3190021888E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA10CB7C2051C3180021888E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA10CB832051C3180021888E;
+			remoteInfo = LaserGuidedWarSharks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA10CB842051C3180021888E /* LaserGuidedWarSharks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaserGuidedWarSharks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA10CB872051C3180021888E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA10CB892051C3180021888E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		CA10CB8B2051C3180021888E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		CA10CB8D2051C3180021888E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CA10CB8F2051C3180021888E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CA10CB922051C3180021888E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA10CB942051C3180021888E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA10CB972051C3180021888E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA10CB992051C3180021888E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA10CB9E2051C3180021888E /* LaserGuidedWarSharksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaserGuidedWarSharksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA10CBA22051C3190021888E /* LaserGuidedWarSharksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaserGuidedWarSharksTests.swift; sourceTree = "<group>"; };
+		CA10CBA42051C3190021888E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA10CBA92051C3190021888E /* LaserGuidedWarSharksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaserGuidedWarSharksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA10CBAD2051C3190021888E /* LaserGuidedWarSharksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaserGuidedWarSharksUITests.swift; sourceTree = "<group>"; };
+		CA10CBAF2051C3190021888E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA10CB812051C3180021888E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA10CB9B2051C3180021888E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA10CBA62051C3190021888E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA10CB7B2051C3180021888E = {
+			isa = PBXGroup;
+			children = (
+				CA10CB862051C3180021888E /* LaserGuidedWarSharks */,
+				CA10CBA12051C3190021888E /* LaserGuidedWarSharksTests */,
+				CA10CBAC2051C3190021888E /* LaserGuidedWarSharksUITests */,
+				CA10CB852051C3180021888E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA10CB852051C3180021888E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA10CB842051C3180021888E /* LaserGuidedWarSharks.app */,
+				CA10CB9E2051C3180021888E /* LaserGuidedWarSharksTests.xctest */,
+				CA10CBA92051C3190021888E /* LaserGuidedWarSharksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA10CB862051C3180021888E /* LaserGuidedWarSharks */ = {
+			isa = PBXGroup;
+			children = (
+				CA10CB872051C3180021888E /* AppDelegate.swift */,
+				CA10CB892051C3180021888E /* GameScene.sks */,
+				CA10CB8B2051C3180021888E /* Actions.sks */,
+				CA10CB8D2051C3180021888E /* GameScene.swift */,
+				CA10CB8F2051C3180021888E /* GameViewController.swift */,
+				CA10CB912051C3180021888E /* Main.storyboard */,
+				CA10CB942051C3180021888E /* Assets.xcassets */,
+				CA10CB962051C3180021888E /* LaunchScreen.storyboard */,
+				CA10CB992051C3180021888E /* Info.plist */,
+			);
+			path = LaserGuidedWarSharks;
+			sourceTree = "<group>";
+		};
+		CA10CBA12051C3190021888E /* LaserGuidedWarSharksTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA10CBA22051C3190021888E /* LaserGuidedWarSharksTests.swift */,
+				CA10CBA42051C3190021888E /* Info.plist */,
+			);
+			path = LaserGuidedWarSharksTests;
+			sourceTree = "<group>";
+		};
+		CA10CBAC2051C3190021888E /* LaserGuidedWarSharksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA10CBAD2051C3190021888E /* LaserGuidedWarSharksUITests.swift */,
+				CA10CBAF2051C3190021888E /* Info.plist */,
+			);
+			path = LaserGuidedWarSharksUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA10CB832051C3180021888E /* LaserGuidedWarSharks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA10CBB22051C3190021888E /* Build configuration list for PBXNativeTarget "LaserGuidedWarSharks" */;
+			buildPhases = (
+				CA10CB802051C3180021888E /* Sources */,
+				CA10CB812051C3180021888E /* Frameworks */,
+				CA10CB822051C3180021888E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaserGuidedWarSharks;
+			productName = LaserGuidedWarSharks;
+			productReference = CA10CB842051C3180021888E /* LaserGuidedWarSharks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA10CB9D2051C3180021888E /* LaserGuidedWarSharksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA10CBB52051C3190021888E /* Build configuration list for PBXNativeTarget "LaserGuidedWarSharksTests" */;
+			buildPhases = (
+				CA10CB9A2051C3180021888E /* Sources */,
+				CA10CB9B2051C3180021888E /* Frameworks */,
+				CA10CB9C2051C3180021888E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA10CBA02051C3190021888E /* PBXTargetDependency */,
+			);
+			name = LaserGuidedWarSharksTests;
+			productName = LaserGuidedWarSharksTests;
+			productReference = CA10CB9E2051C3180021888E /* LaserGuidedWarSharksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA10CBA82051C3190021888E /* LaserGuidedWarSharksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA10CBB82051C3190021888E /* Build configuration list for PBXNativeTarget "LaserGuidedWarSharksUITests" */;
+			buildPhases = (
+				CA10CBA52051C3190021888E /* Sources */,
+				CA10CBA62051C3190021888E /* Frameworks */,
+				CA10CBA72051C3190021888E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA10CBAB2051C3190021888E /* PBXTargetDependency */,
+			);
+			name = LaserGuidedWarSharksUITests;
+			productName = LaserGuidedWarSharksUITests;
+			productReference = CA10CBA92051C3190021888E /* LaserGuidedWarSharksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA10CB7C2051C3180021888E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "HLAD Studios";
+				TargetAttributes = {
+					CA10CB832051C3180021888E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CA10CB9D2051C3180021888E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CA10CB832051C3180021888E;
+					};
+					CA10CBA82051C3190021888E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CA10CB832051C3180021888E;
+					};
+				};
+			};
+			buildConfigurationList = CA10CB7F2051C3180021888E /* Build configuration list for PBXProject "LaserGuidedWarSharks" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA10CB7B2051C3180021888E;
+			productRefGroup = CA10CB852051C3180021888E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA10CB832051C3180021888E /* LaserGuidedWarSharks */,
+				CA10CB9D2051C3180021888E /* LaserGuidedWarSharksTests */,
+				CA10CBA82051C3190021888E /* LaserGuidedWarSharksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA10CB822051C3180021888E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA10CB932051C3180021888E /* Main.storyboard in Resources */,
+				CA10CB8A2051C3180021888E /* GameScene.sks in Resources */,
+				CA10CB952051C3180021888E /* Assets.xcassets in Resources */,
+				CA10CB982051C3180021888E /* LaunchScreen.storyboard in Resources */,
+				CA10CB8C2051C3180021888E /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA10CB9C2051C3180021888E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA10CBA72051C3190021888E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA10CB802051C3180021888E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA10CB8E2051C3180021888E /* GameScene.swift in Sources */,
+				CA10CB902051C3180021888E /* GameViewController.swift in Sources */,
+				CA10CB882051C3180021888E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA10CB9A2051C3180021888E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA10CBA32051C3190021888E /* LaserGuidedWarSharksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA10CBA52051C3190021888E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA10CBAE2051C3190021888E /* LaserGuidedWarSharksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA10CBA02051C3190021888E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA10CB832051C3180021888E /* LaserGuidedWarSharks */;
+			targetProxy = CA10CB9F2051C3190021888E /* PBXContainerItemProxy */;
+		};
+		CA10CBAB2051C3190021888E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA10CB832051C3180021888E /* LaserGuidedWarSharks */;
+			targetProxy = CA10CBAA2051C3190021888E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA10CB912051C3180021888E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA10CB922051C3180021888E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA10CB962051C3180021888E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA10CB972051C3180021888E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA10CBB02051C3190021888E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA10CBB12051C3190021888E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA10CBB32051C3190021888E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LK33VPERP2;
+				INFOPLIST_FILE = LaserGuidedWarSharks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.llcc.dcc.LaserGuidedWarSharks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA10CBB42051C3190021888E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LK33VPERP2;
+				INFOPLIST_FILE = LaserGuidedWarSharks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.llcc.dcc.LaserGuidedWarSharks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA10CBB62051C3190021888E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LK33VPERP2;
+				INFOPLIST_FILE = LaserGuidedWarSharksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.llcc.dcc.LaserGuidedWarSharksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaserGuidedWarSharks.app/LaserGuidedWarSharks";
+			};
+			name = Debug;
+		};
+		CA10CBB72051C3190021888E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LK33VPERP2;
+				INFOPLIST_FILE = LaserGuidedWarSharksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.llcc.dcc.LaserGuidedWarSharksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaserGuidedWarSharks.app/LaserGuidedWarSharks";
+			};
+			name = Release;
+		};
+		CA10CBB92051C3190021888E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LK33VPERP2;
+				INFOPLIST_FILE = LaserGuidedWarSharksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.llcc.dcc.LaserGuidedWarSharksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LaserGuidedWarSharks;
+			};
+			name = Debug;
+		};
+		CA10CBBA2051C3190021888E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LK33VPERP2;
+				INFOPLIST_FILE = LaserGuidedWarSharksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.llcc.dcc.LaserGuidedWarSharksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LaserGuidedWarSharks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA10CB7F2051C3180021888E /* Build configuration list for PBXProject "LaserGuidedWarSharks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA10CBB02051C3190021888E /* Debug */,
+				CA10CBB12051C3190021888E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA10CBB22051C3190021888E /* Build configuration list for PBXNativeTarget "LaserGuidedWarSharks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA10CBB32051C3190021888E /* Debug */,
+				CA10CBB42051C3190021888E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA10CBB52051C3190021888E /* Build configuration list for PBXNativeTarget "LaserGuidedWarSharksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA10CBB62051C3190021888E /* Debug */,
+				CA10CBB72051C3190021888E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA10CBB82051C3190021888E /* Build configuration list for PBXNativeTarget "LaserGuidedWarSharksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA10CBB92051C3190021888E /* Debug */,
+				CA10CBBA2051C3190021888E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA10CB7C2051C3180021888E /* Project object */;
+}
