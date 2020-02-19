@@ -3,7 +3,7 @@
 //  LaserGuidedWarSharks
 //
 //  Created by Bolinger, Kyle on 3/8/18.
-//  Copyright © 2018 HLAD Studios. All rights reserved.
+//  Copyright © 2018 Pigeon Rubbish Studios. All rights reserved.
 //
 
 import UIKit
