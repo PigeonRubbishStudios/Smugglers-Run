@@ -2,8 +2,8 @@
 //  MyUtils.swift
 //  LaserGuidedWarSharks
 //
-//  Created by Bolinger, Kyle D on 3/29/18.
-//  Copyright © 2018 HLAD Studios. All rights reserved.
+//  Created by Kyle Bolinger on 3/29/18.
+//  Copyright © 2018 Pigeon Rubbish Studios. All rights reserved.
 //
 
 import Foundation
