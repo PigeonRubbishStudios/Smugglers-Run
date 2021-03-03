@@ -138,11 +138,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         {
             textures.append(SKTexture(imageNamed: "shark\(i)"))
         }
+        
         // This adds frames 5, 4, 3, & 2to the list
         textures.append(textures[4])
         textures.append(textures[3])
         textures.append(textures[2])
         textures.append(textures[1])
+        
         // Create and run an action
         sharkAnimation = SKAction.animate(with: textures,
                                            timePerFrame: 0.075)
@@ -150,7 +152,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         super.init(size: size)
     }
     
-    //Some Bullshit Required for the Override Function ¯\_(ツ)_/¯
+    //Some Code Required for the Override Function ¯\_(ツ)_/¯
     required init(coder aDecoder: NSCoder)
     {
         fatalError("init(coder:) has not been implemented")
@@ -159,7 +161,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     //Update Function
     override func update(_ currentTime: TimeInterval)
     {
-        //Some Update Finding Bullshit ¯\_(ツ)_/¯
+        //Some Update Finding Code ¯\_(ツ)_/¯
         if lastUpdateTime > 0
         {
             dt = currentTime - lastUpdateTime
@@ -365,11 +367,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     
     //Function to Rotate the Shark
     func rotate(sprite: SKSpriteNode, direction: CGPoint, rotateRadiansPerSec: CGFloat)
-    {
-//        let shortest = shortestAngleBetween(angle1: sprite.zRotation, angle2: velocity.angle)
-//        let amountToRotate = min(rotateRadiansPerSec * CGFloat(dt), abs(shortest))
-//        sprite.zRotation += shortest.sign() * amountToRotate
-        
+    {        
         //Set the Shark Rotation Based on the Accelerometers
         if xAcceleration >= 0.1
         {
@@ -641,9 +639,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             let leftBuoyNode = SKSpriteNode(texture: leftBuoyTexture)
             leftBuoyNode.zPosition = -30
             leftBuoyNode.anchorPoint = CGPoint.zero
-            leftBuoyNode.position = CGPoint(x: -380
-                , y: (cameraRect.size.height * CGFloat(i)) - CGFloat(1 * i))
+            leftBuoyNode.position = CGPoint(x: -380, y: (cameraRect.size.height * CGFloat(i)) - CGFloat(1 * i))
             addChild(leftBuoyNode)
+            
             let rightBuoyNode = SKSpriteNode(texture: rightBuoyTexture)
             rightBuoyNode.zPosition = -30
             rightBuoyNode.anchorPoint = CGPoint.zero
@@ -829,10 +827,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             barrel1 = SKSpriteNode(texture: barrel1Texture)
             
             barrel1.name = "barrel1"
-            barrel1.position = CGPoint(
-                x: CGFloat.random(min: self.cameraRect.minX,
-                                  max: self.cameraRect.maxX),
-                y: 2048)
+            barrel1.position = CGPoint(x: CGFloat.random(min: self.cameraRect.minX, max: self.cameraRect.maxX), y: 2048)
             barrel1.setScale(0)
             barrel1.zPosition = 0
             barrel1.physicsBody = SKPhysicsBody(texture: barrel1Texture, size: barrel1Texture.size())
@@ -886,10 +881,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             barrel2 = SKSpriteNode(texture: barrel2Texture)
             
             barrel2.name = "barrel2"
-            barrel2.position = CGPoint(
-                x: CGFloat.random(min: self.cameraRect.minX,
-                                  max: self.cameraRect.maxX),
-                y: 2048)
+            barrel2.position = CGPoint(x: CGFloat.random(min: self.cameraRect.minX, max: self.cameraRect.maxX), y: 2048)
             barrel2.setScale(0)
             barrel2.zPosition = 0
             barrel2.physicsBody = SKPhysicsBody(texture: barrel2Texture, size: barrel2Texture.size())
@@ -943,10 +935,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             bottle = SKSpriteNode(texture: bottleTexture)
             
             bottle.name = "bottle"
-            bottle.position = CGPoint(
-                x: CGFloat.random(min: self.cameraRect.minX,
-                                  max: self.cameraRect.maxX),
-                y: 2048)
+            bottle.position = CGPoint(x: CGFloat.random(min: self.cameraRect.minX, max: self.cameraRect.maxX), y: 2048)
             bottle.setScale(0)
             bottle.zPosition = 0
             bottle.physicsBody = SKPhysicsBody(texture: bottleTexture, size: bottleTexture.size())
@@ -963,8 +952,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             
             let scaleUp = SKAction.scale(by: 1.2, duration: 2.0)
             let scaleDown = scaleUp.reversed()
-            let fullScale = SKAction.sequence(
-                [scaleUp, scaleDown])
+            let fullScale = SKAction.sequence([scaleUp, scaleDown])
             let group = SKAction.group([fullScale])
             let groupWait = SKAction.repeat(group, count: 10)
             
