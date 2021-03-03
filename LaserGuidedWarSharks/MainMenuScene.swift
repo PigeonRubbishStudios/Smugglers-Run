@@ -23,7 +23,6 @@ class MainMenuScene: SKScene
     let versionLabel2 = SKLabelNode(fontNamed: "OptimusPrincepsSemiBold")
     let gameLabel = SKLabelNode(fontNamed: "OptimusPrincepsSemiBold")
     let textColor = SKColor(red: 251.0/255.0, green: 204.0/255.0, blue: 51.0/255.0, alpha: 1.0)
-    //let touchNote = SKLabelNode(fontNamed: "Helvetica-Bold")
     
     override func didMove(to view: SKView)
     {
@@ -55,15 +54,8 @@ class MainMenuScene: SKScene
     {
         let myScene = GameScene(size: size)
         myScene.scaleMode = scaleMode
-        //let reveal = SKTransition.fade(withDuration: 1.5)
         view?.presentScene(myScene)
     }
-
-//    override func touchesBegan(_ touches: Set<UITouch>,
-//                               with event: UIEvent?)
-//    {
-//        sceneTapped()
-//    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
@@ -96,6 +88,7 @@ class MainMenuScene: SKScene
         rightBuoyNode.anchorPoint = CGPoint.zero
         rightBuoyNode.position = CGPoint(x: 1374, y: 0)
         addChild(rightBuoyNode)
+        
         let leftBuoyNode = SKSpriteNode(texture: leftBuoyTexture)
         leftBuoyNode.zPosition = -30
         leftBuoyNode.anchorPoint = CGPoint.zero
@@ -104,12 +97,7 @@ class MainMenuScene: SKScene
     }
     
     func createBackground()
-    {
-//        let date = Date()
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "M.d.yy"
-//        let versionDate = formatter.string(from: date)
-        
+    {        
         let waterTexture = SKTexture(imageNamed: "water")
         let waterNode = SKSpriteNode(texture: waterTexture)
         waterNode.zPosition = -50
@@ -126,40 +114,25 @@ class MainMenuScene: SKScene
         playLabel2.text = "Tap to Play!"
         versionLabel.text = "Version: 1.2"
         versionLabel2.text = "Version: 1.2"
-        //gameLabel.text = "Smuggler's Run"
-        //touchNote.text = "Note: To Move Shark, Touch and Drag on the Top Portion of the iPad Screen Only!"
         playLabel.fontColor = textColor
         versionLabel.fontColor = textColor
         playLabel2.fontColor = SKColor.black
         versionLabel2.fontColor = SKColor.black
-        //gameLabel.fontColor = SKColor.red
-        //touchNote.fontColor = SKColor.red
         playLabel.fontSize = 125
         versionLabel.fontSize = 45
         playLabel2.fontSize = 125
         versionLabel2.fontSize = 45
-        //gameLabel.fontSize = 225
-        //touchNote.fontSize = 30
         playLabel.position = CGPoint(x: 768, y: 542)
         versionLabel.position = CGPoint(x: 768, y: 350)
         playLabel2.position = CGPoint(x: 763, y: 537)
         versionLabel2.position = CGPoint(x: 763, y: 345)
-        //gameLabel.position = CGPoint(x: 768, y: 1708)
-        //touchNote.position = CGPoint(x: 768, y: 942)
         playLabel.zPosition = 110
         versionLabel.zPosition = 110
         playLabel2.zPosition = 105
         versionLabel2.zPosition = 105
-        //gameLabel.zPosition = 110
-        //touchNote.zPosition = 510
         
-        //Add Text Label
-        //addChild(playLabel)
         addChild(versionLabel)
-        //addChild(playLabel2)
         addChild(versionLabel2)
-        //addChild(gameLabel)
-        //addChild(touchNote)
         
         //Set Up Logo
         let logoTexture = SKTexture(imageNamed: "logo")
