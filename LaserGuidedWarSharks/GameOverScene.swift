@@ -32,7 +32,6 @@ class GameOverScene: SKScene
         {
             let myScene = MainMenuScene(size: self.size)
             myScene.scaleMode = self.scaleMode
-            //let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
             self.view?.presentScene(myScene)
         }
         self.run(SKAction.sequence([wait, block]))
